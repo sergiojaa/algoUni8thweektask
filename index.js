@@ -62,12 +62,36 @@
 // })
 
 //6. შექმენით ფრომისი, რომელიც დაარეზოლვებს შემთხვევების 50%-ში და დანარჩენ 50%-ში დაარეჯექთებს. დაუმკლავდით ორივე ვარიანტს then და catch-ით.
-
+// const promise = new Promise((resolve, reject) => {
+//     if(Math.random() >= 0.5 ){
+//         resolve('promise resolved')
+//     }else{
+//         reject('promise rejected')
+//     }
+// })
+// promise.then(result => {
+//     console.log(result)
+// }).catch(error =>{
+//     console.error(error)
+// })
 
 
 
 //7. შექმენით Promise Chain (მინიმუმ 3 ფრომისით), სადაც თითოეული დარეზოლვდება 1 წამში და გამოიტანს განსხვავებულ წარმატების შეტყობინებებს.
-
+// const promise = new Promise((resolve)=>{
+//     return resolve
+// })
+// promise.then(resolve => 
+//     {console.log(resolve);
+//     return promise
+//     }).then(resolve => {
+//         console.log(resolve)
+//         return promise
+//     }).then(resolve => {
+//         console.log(resolve)
+//     }).catch(error => {
+//         console.error(error)
+//     })
 
 
 
@@ -90,7 +114,16 @@
 // }
 //9. დაწერეთ პროგრამა, რომელიც მომხმარებელს შეეკითხება დადებით რიცხვს და დაითვლის მაგ რიცხვამდე. თითოეული რიცხვი უნდა გამოკონსოლდეს
 // 1 წამის ინტერვალით.
-
+// const num = 5;
+// let currentNumber = 1;
+// const interval = setInterval(()=>{
+//     console.log(currentNumber)
+//     if(currentNumber === num){
+//         clearInterval(interval)
+        
+//     }
+//     currentNumber++
+// }, 1000)
 
 
 //10. დაწერეთ პროგრამა, რომელიც მომხმარბელს შეეკითხება თავისი გითჰაბის იუზერნეიმს და წამოიღებს მის ინფორმაციას გითჰაბის API-დან.
