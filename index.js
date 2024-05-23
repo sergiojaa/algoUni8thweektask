@@ -23,7 +23,18 @@
 //შემდეგ მასივში უნდა ჩაიფუშოს რიცხვი და დაბრუნოს განახლებული მასივი. მინიშნება: callback ფუნქციას გამოძახებისას არგუმენტებად
 // გაატანეთ მასივი და რიცხვი, რომელიც მასივში უნდა ჩაიფუშოს.
 
+// function addNumber(arr, num, callback){
+//     callback(arr,num)
+//     return arr
+// }
+// function addToArray(arr,num){
+//     arr.push(num)
+// }
+// let myArray = [1,2,3]
+// let num = 4
 
+// let updateArray = addNumber(myArray,num,addToArray)
+// console.log('updated Array:', updateArray )
 
 
 //4. შექმენით ფრომისი, რომელიც დარეზოლვდება 2 წამის შემდეგ და გამოიტანს წარამტების შეტყობინებას.
@@ -86,55 +97,6 @@
 // API ლინკი - https://api.github.com/users/[username], მაგალითად: https://api.github.com/users/temuritsutskiridze. 
 //ჯერ გამოიყენეთ then/catch და შემდეგ async/await.
 // https://api.github.com/users/sergiojaa
-
-// async function getInfoGithub(){
-//     let response = await fetch("https://api.github.com/users/sergiojaa")
-//     let data = await response.json();
-//     console.log(data)
-// }
-// getInfoGithub()
-// function myFunction(){
-//     let count = 0
-//     let interval = setInterval(() => {
-//         count++;
-//         console.log(count)
-//         if(count >= 10){
-//             clearInterval(interval)
-//             getInfoGithub()
-//         }
-//     },1000)
-    
-// }
-// setTimeout(myFunction, 2000 )
-
-// async function getInfoGithub(){
-//     let response = await fetch("https://api.github.com/users/sergiojaa")
-//     let data = await response.json();
-//     return data
-// }
-// getInfoGithub()
-// function myFunction(){
-//     let count = 0
-//     getInfoGithub().then(final => console.log(final))
-//     let interval = setInterval(() => {
-//         count++;
-//         console.log(count)
-//         if(count >= 10){
-//             clearInterval(interval)
-//         }
-//     },100)
-    
-// }
-// setTimeout(myFunction, 2000 )
-setInterval(() =>{
-    let hour = new Date().getHours();
-    let minutes = new Date().getMinutes();
-    let seconds =  new Date().getSeconds()
-    if(seconds === 40){
-        clearInterval(interval)
-    }
-    console.log(`${hour}:${minutes}:${seconds}`)
-}, 1000 )
 
 
 //11. დაწერეთ პროგრამა, რომელსაც API-დან მოაქვს ორი განსხვავებული ინფორმაცია და დაბეჭდოს, როდესაც ორივეს მიიღებს
