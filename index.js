@@ -131,10 +131,10 @@
 //     "https://jsonplaceholder.typicode.com/todos/2",
 //     "https://jsonplaceholder.typicode.com/todos/3"
 // ]
-// // unda shevqmnat cvladi gadavurbinot mapit davfetchot da gamovitanot responsit
+
 // const promises = urls.map(url=> fetch(url).then(response=>response.json()) )
 // Promise.race(promises).then(fastestData=>console.log(fastestData))
-// Promise.race(promises).then(fastestData => console.log(fastestData)) 
+
 
 // const promises = urls.map(url => fetch(url).then(response => response.json()));
 // Promise.race(promises).then(fastestData => console.log(fastestData));
