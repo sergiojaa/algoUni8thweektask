@@ -136,6 +136,4 @@
 // Promise.race(promises).then(fastestData=>console.log(fastestData))
 
 
-// const promises = urls.map(url => fetch(url).then(response => response.json()));
-// Promise.race(promises).then(fastestData => console.log(fastestData));
 
